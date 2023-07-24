@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - cupbeans</title>
+    <link rel="shortcut icon" href="./assets/images/favIcon.png" type="image/x-icon">
+    <!-- aos animation -->
+    <link rel="stylesheet" href="./assets/vendor/aos/css/aos.css">
+<!-- select2 -->
+    <link rel="stylesheet" href="./assets/vendor/select2/css/select2.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- fontawesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+        integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <header class="header border-bottom">
+        <section class="bgPrimary py-2 d-none d-lg-block">
+            <div class="container-xxl text-white text-center">
+                <p class="mb-0">Sign up for 20% off your first order. <a href="#"
+                        class="text-white text-decoration-underline">Subscribe</a>.</p>
+            </div>
+        </section>
+        <section class="py-3 bgLight position-relative">
+            <div class="container-xxl">
+                <div class="rowBetweenCenter position-relative">
+                    <div class="logoContainer">
+                        <a href="./index.html" class="d-inline-block">
+                            <img src="./assets/images/logo.png" class="img-fluid" alt="logo">
+                        </a>
+                    </div>
+                    <div class="eComm">
+                        <div class="d-flex align-items-center">
+                            <a href="./shop.html" class="shopBtn me-3">SHOP</a>
+                            <button class="iconContainer flexCenter me-3">
+                                <i class="fa-solid fa-cart-plus icon"></i>
+                            </button>
+                            <button class="iconContainer flexCenter" id="headerSearchButton">
+                                <i class="fa-solid fa-magnifying-glass icon rotate90" id="togleIcon"></i>
+                            </button>
+                            <div class="headerSearchField shadow px-4 py-5" id="headerSearchField">
+                                <form action="#">
+                                    <div class="input-group border-bottom">
+                                        <input type="text" class="form-control border-0" placeholder="Search...">
+                                        <button type="submit" class="input-group-text bg-transparent border-0"
+                                            id="basic-addon2">
+                                            <i class="fa-solid fa-magnifying-glass fs-20 rotate90"></i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main class="main shop">
+        <section class="pt-5">
+            <div class="container-xxl">
+                <div class="row">
+                    <div class="col-12 col-lg-3 mb-5 shopLeftBar">
+                        <div class="leftBar">
+                            <form action="#">
+                                <div class="input-group mb-3 border-bottom">
+                                    <input type="text" class="form-control border-0 bg-transparent searchProducts"
+                                        placeholder="Search products..." name="search-products">
+                                    <button type="submit" class="input-group-text bg-transparent border-0">
+                                        <i class="fa-solid fa-magnifying-glass rotate90"></i>
+                                    </button>
+                                </div>
+                            </form>
+                            <div class="bestSeller pb-3">
+                                <h4 class="textPrimary text-center mb-3">BEST SELLERS</h4>
+                                <div class="d-flex mb-4">
+                                    <div class="left">
+                                        <img src="./assets/images/shop/seller1.jpg" alt="seller">
+                                    </div>
+                                    <div class="right ps-2">
+                                        <a href="#" class="textPrimary fs-18">Praline with Nut</a>
+                                        <p class="mb-0">£ 3.00</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-4">
+                                    <div class="left">
+                                        <img src="./assets/images/shop/seller1.jpg" alt="seller">
+                                    </div>
+                                    <div class="right ps-2">
+                                        <a href="#" class="textPrimary fs-18">Praline with Nut</a>
+                                        <p class="mb-0">£ 3.00</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-4">
+                                    <div class="left">
+                                        <img src="./assets/images/shop/seller1.jpg" alt="seller">
+                                    </div>
+                                    <div class="right ps-2">
+                                        <a href="#" class="textPrimary fs-18">Praline with Nut</a>
+                                        <p class="mb-0">£ 3.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popularTags mb-5">
+                                <h4 class="textPrimary text-center mb-3">POPULAR TAGS</h4>
+                                <form action="#">
+                                    <div class="d-flex gap-10 flex-wrap">
+                                        <input type="button" value="bakery" class="button">
+                                        <input type="button" value="biscuits" class="button">
+                                        <input type="button" value="bread" class="button">
+                                        <input type="button" value="candy" class="button">
+                                        <input type="button" value="chocolate" class="button">
+                                        <input type="button" value="cream" class="button">
+                                        <input type="button" value="delicious" class="button">
+                                        <input type="button" value="sweet" class="button">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="shopingCart">
+                                <h4 class="textPrimary text-center mb-3">SHOPPING CART</h4>
+                                <!-- if cart is empty -->
+                                <p>No products in the cart.</p>
+                                <!-- if cart not empty -->
+                                <div class="px-2">
+                                    <!-- cart item map -->
+                                    <div class="d-flex cartBox justify-content-between">
+                                        <div class="detailContainer d-flex">
+                                            <img src="./assets/images/shop/cartsmall1.jpg" alt="cart prod">
+                                            <span class="ps-2 pt-2">
+                                                <h5 class="mb-1">Rose Truffle</h5>
+                                                <p class="mb-0">£ 2.00</p>
+                                            </span>
+                                        </div>
+                                        <div class="close">
+                                            <i role="button" class="fa-solid fa-xmark fs-20"></i>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex cartBox justify-content-between">
+                                        <div class="detailContainer d-flex">
+                                            <img src="./assets/images/shop/cartsmall1.jpg" alt="cart prod">
+                                            <span class="ps-2 pt-2">
+                                                <h5 class="mb-1">Rose Truffle</h5>
+                                                <p class="mb-0">£ 2.00</p>
+                                            </span>
+                                        </div>
+                                        <div class="close">
+                                            <i role="button" class="fa-solid fa-xmark fs-20"></i>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <h5>Subtotal: <span class="textPrimary">£ 9.00</span></h5>
+                                    <a href="#" class="btnPrimary my-3">VIEW CART</a>
+                                    <a href="#" class="btnOutlinedPrimary">CHECKOUT</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-9 shopRightBar">
+                        <div class="shopRight">
+                            <div class="row justify-content-between">
+                                <div class="col-12 col-sm-6 col-md-3 mb-3">
+                                    <p class="mb-0">Showing 1–9 of 21 results</p>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3 mb-3">
+                                    <button class="filtersBtn" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseExample" aria-expanded="false"
+                                        aria-controls="collapseExample">Filters</button>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3 mb-3">
+                                    <form action="#">
+                                        <select name="product-sorting" class="productSorting">
+                                            <option value="Default sorting" selected>Default sorting</option>
+                                            <option value="Sort by popularity" selected>Sort by popularity</option>
+                                            <option value="Sort by average rating" selected>Sort by average rating
+                                            </option>
+                                            <option value="Sort by latest" selected>Sort by latest</option>
+                                            <option value="Sort by price: low to high" selected>Sort by price: low
+                                                to high</option>
+                                            <option value="Sort by price: high to low" selected>Sort by price: high
+                                                to low</option>
+                                        </select>
+                                    </form>
+                                </div>
+                                <div class="collapse col-12 mb-3" id="collapseExample">
+                                    <div class="card card-body">
+                                        <form action="#" class="row">
+                                            <div class="col-12 col-sm-3 mb-3 mb-sm-0">
+                                                <h6 class="textPrimary">CATEGORY</h6>
+                                                <ul class="listStyleNone">
+                                                    <li>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" name="flavour"
+                                                                class="form-check-input customCheckbox">
+                                                            <span class="text-uppercase ms-1 fs-14">Uncategorized</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" name="flavour"
+                                                                class="form-check-input customCheckbox">
+                                                            <span class="text-uppercase ms-1 fs-14">Bakery</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" name="flavour"
+                                                                class="form-check-input customCheckbox">
+                                                            <span class="text-uppercase ms-1 fs-14">Candies</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" name="flavour"
+                                                                class="form-check-input customCheckbox">
+                                                            <span class="text-uppercase ms-1 fs-14">Chocolate</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" name="flavour"
+                                                                class="form-check-input customCheckbox">
+                                                            <span class="text-uppercase ms-1 fs-14">Pralines</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" name="flavour"
+                                                                class="form-check-input customCheckbox">
+                                                            <span class="text-uppercase ms-1 fs-14">Truffles</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-12 col-sm-9">
+                                                <h6 class="textPrimary">FILTER BY PRICE</h6>
+                                                <div class="rangeSlider mt-4">
+                                                    <input type="range" min="0" max="100" value="0" step="1"
+                                                        id="range-left" />
+                                                    <input type="range" min="0" max="100" value="100" step="1"
+                                                        id="range-right" />
+
+                                                    <div class="label">
+                                                        <p class="mb-0">£1.00</p>
+                                                        <p class="mb-0">£2.00</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6 col-lg-4 mb-5" data-aos="fade-up">
+                                    <div class="card itemCard">
+                                        <img src="./assets/images/shop/shop1.jpg" class="card-img-top normalImage"
+                                            alt="shop1">
+                                        <!-- hover img -->
+                                        <div class="hoverImage">
+                                            <a href="#" class="likeItem shadow flexCenter">
+                                                <i class="fa-regular fa-heart fs-18"></i>
+                                            </a>
+                                            <img src="./assets/images/shop//shop2.jpg" class="card-img-top" alt="shop2">
+                                            <a href="#" class="addToCart btnPrimary">ADD TO CART</a>
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h4>Cookie Box</h4>
+                                            <p class="fs-18 mb-0">£ 1.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination justify-content-center mb-5">
+                                    <li class="page-item">
+                                        <a class="page-link">
+                                            <i class="fa-solid fa-arrow-left-long"></i>
+                                        </a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">
+                                            <i class="fa-solid fa-arrow-right-long"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer pt-5 bgDark">
+        <div class="container-xxl">
+            <div class="row text-white">
+                <div class="col-12 mb-3">
+                    <div class="footerLogo m-auto">
+                        <a href="./index.html" class="d-inline-block">
+                            <img src="./assets/images/footerLogo.png" class="img-fluid" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 mb-3">
+                    <div class="footerContent">
+                        <ul class="listStyleNone">
+                            <li class="mb-3"><i class="fa-solid fa-location-dot me-2 textPrimary fs-20"></i> 88
+                                MACDONALD
+                                STREET, B5 6TN,
+                                UK</li>
+                            <li><i class="fa-solid fa-phone me-2 textPrimary fs-20"></i> +44 7375 370010</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 mb-3">
+                    <div class="footerContent text-center">
+                        <h3 class="mb-3 fs-18">Whisper to us about your feelings, and we will prepare what you need now.</h3>
+                        <div class="d-flex justify-content-center gap-10">
+                            <a href="#" class="socialIcon flexCenter">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="socialIcon flexCenter">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#" class="socialIcon flexCenter">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 mb-3">
+                    <div class="footerContent">
+                        <ul class="listStyleNone quickLinks">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Refund policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Contact us </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottomFooter border-top py-3">
+            <p class="text-center textLight mb-0">Copyright © 2023 cupbeans. All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- aos animation -->
+    <script src="./assets/vendor/aos/js/aos.js"></script>
+    <!-- Bootstrap -->
+    <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- jquery -->
+    <script src="./assets/vendor/jquery/jquery.js"></script>
+<!-- select2 -->
+<script src="./assets/vendor/select2/js/select2.min.js"></script>
+    <!-- Custom Js -->
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

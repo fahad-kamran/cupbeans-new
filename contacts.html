@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts - cupbeans</title>
+    <link rel="shortcut icon" href="./assets/images/favIcon.png" type="image/x-icon">
+    <!-- aos animation -->
+    <link rel="stylesheet" href="./assets/vendor/aos/css/aos.css">
+<!-- select2 -->
+    <link rel="stylesheet" href="./assets/vendor/select2/css/select2.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- fontawesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+        integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <header class="header border-bottom">
+        <section class="bgPrimary py-2 d-none d-lg-block">
+            <div class="container-xxl text-white text-center">
+                <p class="mb-0">Sign up for 20% off your first order. <a href="#"
+                        class="text-white text-decoration-underline">Subscribe</a>.</p>
+            </div>
+        </section>
+        <section class="py-3 bgLight position-relative">
+            <div class="container-xxl">
+                <div class="rowBetweenCenter position-relative">
+                    <div class="logoContainer">
+                        <a href="./index.html" class="d-inline-block">
+                            <img src="./assets/images/logo.png" class="img-fluid" alt="logo">
+                        </a>
+                    </div>
+                    <div class="eComm">
+                        <div class="d-flex align-items-center">
+                            <a href="./shop.html" class="shopBtn me-3">SHOP</a>
+                            <button class="iconContainer flexCenter me-3">
+                                <i class="fa-solid fa-cart-plus icon"></i>
+                            </button>
+                            <button class="iconContainer flexCenter" id="headerSearchButton">
+                                <i class="fa-solid fa-magnifying-glass icon rotate90" id="togleIcon"></i>
+                            </button>
+                            <div class="headerSearchField shadow px-4 py-5" id="headerSearchField">
+                                <form action="#">
+                                    <div class="input-group border-bottom">
+                                        <input type="text" class="form-control border-0" placeholder="Search...">
+                                        <button type="submit" class="input-group-text bg-transparent border-0"
+                                            id="basic-addon2">
+                                            <i class="fa-solid fa-magnifying-glass fs-20 rotate90"></i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main class="main contacts">
+        <section class="contactHero sectionsHeader">
+            <div class="main flexCenter">
+                <div class="text-center">
+                    <h1 class="mb-3 pageTitle">CONTACTS</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="./index.html" class="text-white fs-18">Home</a></li>
+                            <li class="breadcrumb-item active text-white text-decoration-underline fs-18"
+                                aria-current="page">Contacts</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        <section class="bgWhite py-5">
+            <div class="container-xl py-5">
+                <div class="row">
+                    <div class="col-12 col-md-6 mb-5" data-aos="fade-right">
+                        <img src="./assets/images/contacts.png" alt="contacts" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-md-6 mb-5" data-aos="fade-left">
+                        <div class="formBox ps-0 ps-md-3">
+                            <p class="textPrimary fw-bold afterEffect mb-4">MAKE AN ORDER</p>
+                            <h1 class="mb-4">DROP US A LINE</h1>
+                            <p class="fs-18 contactsDetails mb-4">Your email address will not be published. Required
+                                fields are marked *</p>
+                            <form action="#">
+                                <div class="mb-4">
+                                    <input type="text" class="form-control" name="name" placeholder="Your Name">
+                                </div>
+                                <div class="mb-4">
+                                    <input type="email" class="form-control" name="email" placeholder="Your Email">
+                                </div>
+                                <div class="mb-4">
+                                    <input type="url" class="form-control" name="website" placeholder="Website">
+                                </div>
+                                <div class="mb-4">
+                                    <textarea name="comment" rows="4" class="form-control"
+                                        placeholder="Your Comment"></textarea>
+                                </div>
+                                <div class="submit">
+                                    <button class="btnPrimary">SEND A MESSAGE</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 mb-5 mb-md-0" data-aos="fade-uo">
+                        <div class="ps-0">
+                            <p class="textPrimary fw-bold afterEffect mb-4">OUR CONTACTS</p>
+                            <h1 class="mb-4">NEED TREATS? GET IN TOUCH WITH US</h1>
+                            <p class="fs-18 contactsDetails mb-4">Get in touch to discuss your employee wellbeing needs
+                                today. Please give us
+                                a call, drop us an email.</p>
+                            <div class="mb-4 d-flex">
+                                <span class="icons">
+                                    <i class="fa-solid fa-location-dot fs-26 textPrimary"></i>
+                                </span>
+                                <span class="ps-3">
+                                    <h5 class="textDark">Location</h5>
+                                    <p class="mb-0 textGrey">5 Rue Dalou, 75015 Paris</p>
+                                </span>
+                            </div>
+                            <a href="tel:+1 800 123 456 78" class="mb-4 d-flex"> <!-- change number a tag -->
+                                <span class="icons">
+                                    <i class="fa-solid fa-phone fs-26 textPrimary"></i>
+                                </span>
+                                <span class="ps-3">
+                                    <h5 class="textDark">Phone</h5>
+                                    <p class="mb-0 textGrey">+1 800 123 456 78</p>
+                                </span>
+                            </a>
+                            <a href="mailto:estiene@mail.com" class="mb-4 d-flex"> <!-- change email a tag -->
+                                <span class="icons">
+                                    <i class="fa-solid fa-at fs-26 textPrimary"></i>
+                                </span>
+                                <span class="ps-3">
+                                    <h5 class="textDark">Email</h5>
+                                    <p class="mb-0 textGrey">estiene@mail.com</p>
+                                </span>
+                            </a>
+                            <div class="iconBoxes d-flex gap-10">
+                                <a href="#">
+                                    <i class="fa-regular fa-paper-plane"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 mb-0 mb-md-5" data-aos="fade-up">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d19868.373358018045!2d-0.11951900000000001!3d51.503186!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604b900d26973%3A0x4291f3172409ea92!2slastminute.com%20London%20Eye!5e0!3m2!1sen!2sus!4v1690023741001!5m2!1sen!2sus"
+                            width="100%" height="100%" style="border:0; min-height: 400px;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer pt-5 bgDark">
+        <div class="container-xxl">
+            <div class="row text-white">
+                <div class="col-12 mb-3">
+                    <div class="footerLogo m-auto">
+                        <a href="./index.html" class="d-inline-block">
+                            <img src="./assets/images/footerLogo.png" class="img-fluid" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 mb-3">
+                    <div class="footerContent">
+                        <ul class="listStyleNone">
+                            <li class="mb-3"><i class="fa-solid fa-location-dot me-2 textPrimary fs-20"></i> 88
+                                MACDONALD
+                                STREET, B5 6TN,
+                                UK</li>
+                            <li><i class="fa-solid fa-phone me-2 textPrimary fs-20"></i> +44 7375 370010</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 mb-3">
+                    <div class="footerContent text-center">
+                        <h3 class="mb-3 fs-18">Whisper to us about your feelings, and we will prepare what you need now.
+                        </h3>
+                        <div class="d-flex justify-content-center gap-10">
+                            <a href="#" class="socialIcon flexCenter">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="socialIcon flexCenter">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#" class="socialIcon flexCenter">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 mb-3">
+                    <div class="footerContent">
+                        <ul class="listStyleNone quickLinks">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Refund policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Contact us </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottomFooter border-top py-3">
+            <p class="text-center textLight mb-0">Copyright © 2023 cupbeans. All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- aos animation -->
+    <script src="./assets/vendor/aos/js/aos.js"></script>
+    <!-- Bootstrap -->
+    <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- jquery -->
+    <script src="./assets/vendor/jquery/jquery.js"></script>
+<!-- select2 -->
+<script src="./assets/vendor/select2/js/select2.min.js"></script>
+    <!-- Custom Js -->
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

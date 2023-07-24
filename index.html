@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cupbeans</title>
+    <link rel="shortcut icon" href="./assets/images/favIcon.png" type="image/x-icon">
+    <!-- aos animation -->
+    <link rel="stylesheet" href="./assets/vendor/aos/css/aos.css">
+    <!-- select2 -->
+    <link rel="stylesheet" href="./assets/vendor/select2/css/select2.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css">
+    <!-- owl-carousel -->
+    <link rel="stylesheet" href="./assets/vendor/owl-carousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/vendor/owl-carousel/css/owl.theme.default.min.css">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- fontawesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+        integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <header class="header border-bottom">
+        <section class="bgPrimary py-2 d-none d-lg-block">
+            <div class="container-xxl text-white text-center">
+                <p class="mb-0">Sign up for 20% off your first order. <a href="#"
+                        class="text-white text-decoration-underline">Subscribe</a>.</p>
+            </div>
+        </section>
+        <section class="py-3 bgLight position-relative">
+            <div class="container-xxl">
+                <div class="rowBetweenCenter position-relative">
+                    <div class="logoContainer">
+                        <a href="./index.html" class="d-inline-block">
+                            <img src="./assets/images/logo.png" class="img-fluid" alt="logo">
+                        </a>
+                    </div>
+                    <div class="eComm">
+                        <div class="d-flex align-items-center">
+                            <a href="./shop.html" class="shopBtn me-3">SHOP</a>
+                            <button class="iconContainer flexCenter me-3">
+                                <i class="fa-solid fa-cart-plus icon"></i>
+                            </button>
+                            <button class="iconContainer flexCenter" id="headerSearchButton">
+                                <i class="fa-solid fa-magnifying-glass icon rotate90" id="togleIcon"></i>
+                            </button>
+                            <div class="headerSearchField shadow px-4 py-5" id="headerSearchField">
+                                <form action="#">
+                                    <div class="input-group border-bottom">
+                                        <input type="text" class="form-control border-0" placeholder="Search...">
+                                        <button type="submit" class="input-group-text bg-transparent border-0"
+                                            id="basic-addon2">
+                                            <i class="fa-solid fa-magnifying-glass fs-20 rotate90"></i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main class="main home">
+        <section class="section-1 herosection bgLight overflow-hidden">
+            <div class="container-xl">
+                <div class="contentContainer flexCenter">
+                    <div class="col-12 col-md-8 text-center">
+                        <h1>EXCLUSIVE CHOCOLATE & SWEETIES</h1>
+                    </div>
+                </div>
+                <div class="leftOne">
+                    <img src="./assets/images/home/heroLeft1.jpg" alt="hero" class="img-fluid">
+                </div>
+                <div class="leftTwo">
+                    <img src="./assets/images/home/heroLeft2.jpg" alt="hero" class="img-fluid">
+                </div>
+                <div class="leftThree">
+                    <img src="./assets/images/home/heroLeft3.jpg" alt="hero" class="img-fluid">
+                </div>
+            </div>
+        </section>
+        <section class="section-2 py-5">
+            <div class="container-xl pt-5">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-6 mb-5">
+                        <img src="./assets/images/home/homepageSection2.jpg" alt="section-2" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-md-6 mb-5">
+                        <h1 class="sectionHeading">WE CREATE INCREDIBLY TASTY CHOCOLATE</h1>
+                        <p class="fs-18 line2rem textGrey">Our mission is to provide everyone with high and useful
+                            reward for his/her trading, purchase and investment. Our goal is to make the cryptocurrency
+                            market grow faster.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-3 py-5 position-relative">
+            <div class="sliderText"><span>exclusive chocolate & treats</span></div>
+            <div class="container-fluid pt-5 px-0">
+                <div class="owl-carousel owlCarousel categoryCarousel mb-5">
+                    <a href="#" class="categoryCard">
+                        <div class="imgContainer mb-3">
+                            <img src="./assets/images/home/category/cases-1.jpg" alt="cases-1">
+                        </div>
+                        <div class="rowBetweenCenter">
+                            <h3 class="mb-0 textPrimary">Finest Pralines</h3>
+                            <i class="fa-solid fa-arrow-right-long fs-22 textPrimary"></i>
+                        </div>
+                    </a>
+                    <a href="#" class="categoryCard">
+                        <div class="imgContainer mb-3">
+                            <img src="./assets/images/home/category/cases-2.jpg" alt="cases-2">
+                        </div>
+                        <div class="rowBetweenCenter">
+                            <h3 class="mb-0 textPrimary">100% Chocolate</h3>
+                            <i class="fa-solid fa-arrow-right-long fs-22 textPrimary"></i>
+                        </div>
+                    </a>
+                    <a href="#" class="categoryCard">
+                        <div class="imgContainer mb-3">
+                            <img src="./assets/images/home/category/cases-3.jpg" alt="cases-3">
+                        </div>
+                        <div class="rowBetweenCenter">
+                            <h3 class="mb-0 textPrimary">Chocolate Cakes</h3>
+                            <i class="fa-solid fa-arrow-right-long fs-22 textPrimary"></i>
+                        </div>
+                    </a>
+                    <a href="#" class="categoryCard">
+                        <div class="imgContainer mb-3">
+                            <img src="./assets/images/home/category/cases-4.jpg" alt="cases-4">
+                        </div>
+                        <div class="rowBetweenCenter">
+                            <h3 class="mb-0 textPrimary">Truffles Carames</h3>
+                            <i class="fa-solid fa-arrow-right-long fs-22 textPrimary"></i>
+                        </div>
+                    </a>
+                    <a href="#" class="categoryCard">
+                        <div class="imgContainer mb-3">
+                            <img src="./assets/images/home/category/cases-5.jpg" alt="cases-5">
+                        </div>
+                        <div class="rowBetweenCenter">
+                            <h3 class="mb-0 textPrimary">Chocolate Candies</h3>
+                            <i class="fa-solid fa-arrow-right-long fs-22 textPrimary"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="section-4 py-5 bgLight">
+            <div class="container-xl">
+                <div class="row pt-5">
+                    <div class="col-12 col-md-6 mb-5">
+                        <h1 class="sectionHeading mb-4">HOW A SWEET FAIRY WORLD IS CREATED</h1>
+                        <div class="d-flex gap-10 mb-4">
+                            <span>
+                                <img src="./assets/images/home/icons/cake.png" alt="cake">
+                            </span>
+                            <span class="ps-2">
+                                <h4>Natural Ingredients</h4>
+                                <p class="mb-0 line2rem textGrey">We use only natural ingredients from international
+                                    producers and high-quality dyes.</p>
+                            </span>
+                        </div>
+                        <div class="d-flex gap-10 mb-4">
+                            <span>
+                                <img src="./assets/images/home/icons/chocolate.png" alt="chocolate">
+                            </span>
+                            <span class="ps-2">
+                                <h4>Exquisite Tastes</h4>
+                                <p class="mb-0 line2rem textGrey">We pay great attention to the search for new
+                                    interesting and refined tastes.</p>
+                            </span>
+                        </div>
+                        <div class="d-flex gap-10 mb-4">
+                            <span>
+                                <img src="./assets/images/home/icons/chocolate-bar.png" alt="chocolate-bar">
+                            </span>
+                            <span class="ps-2">
+                                <h4>Use All Types of Chocolate</h4>
+                                <p class="mb-0 line2rem textGrey">We work with dark, white and milk chocolate from the
+                                    best Belgian and French producers.</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 mb-5">
+                        <div class="circle flexCenter">
+                            <img src="./assets/images/home/section-4.png" class="img-fluid" alt="section-4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-5 py-5">
+            <div class="container-xl pt-5">
+                <div class="row justify-content-end">
+                    <div class="col-12 col-md-6 mb-5 text-white">
+                        <h1 class="mb-4 sectionHeading">EXCLUSIVE TREATS FOR YOUR SPECIAL MOMENTS</h1>
+                        <p class="mb-4 line2rem fs-18">Our mission is to provide everyone with high and useful reward
+                            for his/her trading, purchase and investment.</p>
+                        <ul class="listStyleNone">
+                            <li class="d-flex align-items-center fs-18 mb-4"><span class="checkIcon flexCenter me-2"><i
+                                        class="fa-solid fa-check"></i></span> Corporate Orders</li>
+                            <li class="d-flex align-items-center fs-18 mb-4"><span class="checkIcon flexCenter me-2"><i
+                                        class="fa-solid fa-check"></i></span> Corporate Orders</li>
+                            <li class="d-flex align-items-center fs-18 mb-4"><span class="checkIcon flexCenter me-2"><i
+                                        class="fa-solid fa-check"></i></span> Corporate Orders</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-6 py-5 bg-white">
+            <div class="container-xl py-5">
+                <div class="col-12 col-md-8 m-auto text-center mb-5">
+                    <p class="afterEffect beforeEffect textPrimary fw-500">CHOCOLATE STORE</p>
+                    <h1 class="sectionHeading">EXPLORE OUR CHOCOLATE CANDIES & TREATS</h1>
+                </div>
+                <div class="owl-carousel owlCarousel productCarousel">
+                    <div class="card itemCard">
+                        <img src="./assets/images/shop/shop1.jpg" class="card-img-top normalImage" alt="shop1">
+                        <!-- hover img -->
+                        <div class="hoverImage">
+                            <a href="#" class="likeItem shadow flexCenter">
+                                <i class="fa-regular fa-heart fs-18"></i>
+                            </a>
+                            <img src="./assets/images/shop//shop2.jpg" class="card-img-top" alt="shop2">
+                            <a href="#" class="addToCart btnPrimary">ADD TO CART</a>
+                        </div>
+                        <div class="card-body text-center">
+                            <h4>Cookie Box</h4>
+                            <p class="fs-18 mb-0">£ 1.00</p>
+                        </div>
+                    </div>
+                    <div class="card itemCard">
+                        <img src="./assets/images/shop/shop1.jpg" class="card-img-top normalImage" alt="shop1">
+                        <!-- hover img -->
+                        <div class="hoverImage">
+                            <a href="#" class="likeItem shadow flexCenter">
+                                <i class="fa-regular fa-heart fs-18"></i>
+                            </a>
+                            <img src="./assets/images/shop//shop2.jpg" class="card-img-top" alt="shop2">
+                            <a href="#" class="addToCart btnPrimary">ADD TO CART</a>
+                        </div>
+                        <div class="card-body text-center">
+                            <h4>Cookie Box</h4>
+                            <p class="fs-18 mb-0">£ 1.00</p>
+                        </div>
+                    </div>
+                    <div class="card itemCard">
+                        <img src="./assets/images/shop/shop1.jpg" class="card-img-top normalImage" alt="shop1">
+                        <!-- hover img -->
+                        <div class="hoverImage">
+                            <a href="#" class="likeItem shadow flexCenter">
+                                <i class="fa-regular fa-heart fs-18"></i>
+                            </a>
+                            <img src="./assets/images/shop//shop2.jpg" class="card-img-top" alt="shop2">
+                            <a href="#" class="addToCart btnPrimary">ADD TO CART</a>
+                        </div>
+                        <div class="card-body text-center">
+                            <h4>Cookie Box</h4>
+                            <p class="fs-18 mb-0">£ 1.00</p>
+                        </div>
+                    </div>
+                    <div class="card itemCard">
+                        <img src="./assets/images/shop/shop1.jpg" class="card-img-top normalImage" alt="shop1">
+                        <!-- hover img -->
+                        <div class="hoverImage">
+                            <a href="#" class="likeItem shadow flexCenter">
+                                <i class="fa-regular fa-heart fs-18"></i>
+                            </a>
+                            <img src="./assets/images/shop//shop2.jpg" class="card-img-top" alt="shop2">
+                            <a href="#" class="addToCart btnPrimary">ADD TO CART</a>
+                        </div>
+                        <div class="card-body text-center">
+                            <h4>Cookie Box</h4>
+                            <p class="fs-18 mb-0">£ 1.00</p>
+                        </div>
+                    </div>
+                    <div class="card itemCard">
+                        <img src="./assets/images/shop/shop1.jpg" class="card-img-top normalImage" alt="shop1">
+                        <!-- hover img -->
+                        <div class="hoverImage">
+                            <a href="#" class="likeItem shadow flexCenter">
+                                <i class="fa-regular fa-heart fs-18"></i>
+                            </a>
+                            <img src="./assets/images/shop//shop2.jpg" class="card-img-top" alt="shop2">
+                            <a href="#" class="addToCart btnPrimary">ADD TO CART</a>
+                        </div>
+                        <div class="card-body text-center">
+                            <h4>Cookie Box</h4>
+                            <p class="fs-18 mb-0">£ 1.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-7 videoSection py-5">
+            <div class="container-xl py-5">
+                <div class="content flexCenter">
+                    <div role="button" data-bs-toggle="modal" data-bs-target="#videoModal" class="videoBtn flexCenter">
+                        <i class="fa-solid fa-play fs-40 text-white"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/TKnufs85hXk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" id="videoPlayer"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer pt-5 bgDark">
+        <div class="container-xxl">
+            <div class="row text-white">
+                <div class="col-12 mb-3">
+                    <div class="footerLogo m-auto">
+                        <a href="./index.html" class="d-inline-block">
+                            <img src="./assets/images/footerLogo.png" class="img-fluid" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 mb-3">
+                    <div class="footerContent">
+                        <ul class="listStyleNone">
+                            <li class="mb-3"><i class="fa-solid fa-location-dot me-2 textPrimary fs-20"></i> 88
+                                MACDONALD
+                                STREET, B5 6TN,
+                                UK</li>
+                            <li><i class="fa-solid fa-phone me-2 textPrimary fs-20"></i> +44 7375 370010</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 mb-3">
+                    <div class="footerContent text-center">
+                        <h3 class="mb-3 fs-18">Whisper to us about your feelings, and we will prepare what you need now.
+                        </h3>
+                        <div class="d-flex justify-content-center gap-10">
+                            <a href="#" class="socialIcon flexCenter">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="socialIcon flexCenter">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#" class="socialIcon flexCenter">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 mb-3">
+                    <div class="footerContent">
+                        <ul class="listStyleNone quickLinks">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Refund policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Contact us </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottomFooter border-top py-3">
+            <p class="text-center textLight mb-0">Copyright © 2023 cupbeans. All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- jquery -->
+    <script src="./assets/vendor/jquery/jquery.js"></script>
+    <!-- select2 -->
+    <script src="./assets/vendor/select2/js/select2.min.js"></script>
+    <!-- aos animation -->
+    <script src="./assets/vendor/aos/js/aos.js"></script>
+    <!-- owl-carousel -->
+    <script src="./assets/vendor/owl-carousel/js/owl.carousel.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom Js -->
+    <script src="./assets/js/customCarousel.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

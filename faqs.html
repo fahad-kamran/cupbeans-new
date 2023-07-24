@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ's - cupbeans</title>
+    <link rel="shortcut icon" href="./assets/images/favIcon.png" type="image/x-icon">
+    <!-- aos animation -->
+    <link rel="stylesheet" href="./assets/vendor/aos/css/aos.css">
+    <!-- select2 -->
+    <link rel="stylesheet" href="./assets/vendor/select2/css/select2.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- fontawesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+        integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <header class="header border-bottom">
+        <section class="bgPrimary py-2 d-none d-lg-block">
+            <div class="container-xxl text-white text-center">
+                <p class="mb-0">Sign up for 20% off your first order. <a href="#"
+                        class="text-white text-decoration-underline">Subscribe</a>.</p>
+            </div>
+        </section>
+        <section class="py-3 bgLight position-relative">
+            <div class="container-xxl">
+                <div class="rowBetweenCenter position-relative">
+                    <div class="logoContainer">
+                        <a href="./index.html" class="d-inline-block">
+                            <img src="./assets/images/logo.png" class="img-fluid" alt="logo">
+                        </a>
+                    </div>
+                    <div class="eComm">
+                        <div class="d-flex align-items-center">
+                            <a href="./shop.html" class="shopBtn me-3">SHOP</a>
+                            <button class="iconContainer flexCenter me-3">
+                                <i class="fa-solid fa-cart-plus icon"></i>
+                            </button>
+                            <button class="iconContainer flexCenter" id="headerSearchButton">
+                                <i class="fa-solid fa-magnifying-glass icon rotate90" id="togleIcon"></i>
+                            </button>
+                            <div class="headerSearchField shadow px-4 py-5" id="headerSearchField">
+                                <form action="#">
+                                    <div class="input-group border-bottom">
+                                        <input type="text" class="form-control border-0" placeholder="Search...">
+                                        <button type="submit" class="input-group-text bg-transparent border-0"
+                                            id="basic-addon2">
+                                            <i class="fa-solid fa-magnifying-glass fs-20 rotate90"></i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main class="main faqs">
+        <section class="faqsHero sectionsHeader">
+            <div class="main flexCenter">
+                <div class="text-center">
+                    <h1 class="mb-3 pageTitle">FAQ’S</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="./index.html" class="text-white fs-18">Home</a></li>
+                            <li class="breadcrumb-item active text-white text-decoration-underline fs-18"
+                                aria-current="page">FAQ’S</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        <section class="py-5 bgLight">
+            <div class="container-xl pt-5">
+                <div class="row">
+                    <div class="col-12 col-md-5 mb-5">
+                        <p class="textPrimary fw-bold afterEffect mb-4">POPULAR QUESTIONS</p>
+                        <h1 class="bigHeading mb-4">HOPE YOU FIND WHAT YOU ARE LOOKING FOR</h1>
+                        <a href="#" class="btnOutlinedPrimary">MAKE AN ORDER</a>
+                    </div>
+                    <div class="col-12 col-md-7 mb-5">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faqsOne" aria-expanded="true" aria-controls="faqsOne">
+                                        How long will my cupcakes last?
+                                    </button>
+                                </h2>
+                                <div id="faqsOne" class="accordion-collapse collapse show"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        For this, it is necessary to regularly conduct planned technological measures,
+                                        timely diagnostics of problems and their solution.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faqsTwo" aria-expanded="false" aria-controls="faqsTwo">
+                                        How do I care for my shipped cake from Estiene?
+                                    </button>
+                                </h2>
+                                <div id="faqsTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        For this, it is necessary to regularly conduct planned technological measures,
+                                        timely diagnostics of problems and their solution.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faqsThree" aria-expanded="false" aria-controls="faqsThree">
+                                        How do I store my cake from Estiene overnight?
+                                    </button>
+                                </h2>
+                                <div id="faqsThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        For this, it is necessary to regularly conduct planned technological measures,
+                                        timely diagnostics of problems and their solution.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faqsFour" aria-expanded="false" aria-controls="faqsFour">
+                                        Does your cakes have any nutritional information?
+                                    </button>
+                                </h2>
+                                <div id="faqsFour" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        For this, it is necessary to regularly conduct planned technological measures,
+                                        timely diagnostics of problems and their solution.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faqsFive" aria-expanded="false" aria-controls="faqsFive">
+                                        What is the most popular cake from Estiene?
+                                    </button>
+                                </h2>
+                                <div id="faqsFive" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        For this, it is necessary to regularly conduct planned technological measures,
+                                        timely diagnostics of problems and their solution.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faqsSix" aria-expanded="false" aria-controls="faqsSix">
+                                        Can I place an order for same-day delivery/pickup?
+                                    </button>
+                                </h2>
+                                <div id="faqsSix" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        For this, it is necessary to regularly conduct planned technological measures,
+                                        timely diagnostics of problems and their solution.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faqsSeven" aria-expanded="false" aria-controls="faqsSeven">
+                                        What payment methods do you accept?
+                                    </button>
+                                </h2>
+                                <div id="faqsSeven" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        For this, it is necessary to regularly conduct planned technological measures,
+                                        timely diagnostics of problems and their solution.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faqsEight" aria-expanded="false" aria-controls="faqsEight">
+                                        What if I need to update my local order?
+                                    </button>
+                                </h2>
+                                <div id="faqsEight" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        For this, it is necessary to regularly conduct planned technological measures,
+                                        timely diagnostics of problems and their solution.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faqsNine" aria-expanded="false" aria-controls="faqsNine">
+                                        What is the best way to order a custom wedding cake?
+                                    </button>
+                                </h2>
+                                <div id="faqsNine" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        For this, it is necessary to regularly conduct planned technological measures,
+                                        timely diagnostics of problems and their solution.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faqsTen" aria-expanded="false" aria-controls="faqsTen">
+                                        Do you partner with other brands or companies?
+                                    </button>
+                                </h2>
+                                <div id="faqsTen" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        For this, it is necessary to regularly conduct planned technological measures,
+                                        timely diagnostics of problems and their solution.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="faqsCarousel py-5">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner py-5">
+                    <div class="carousel-item text-white text-center active">
+                        <div>
+                            <h2 class="mb-5">“Because a restaurant’s story is never complete, there is always something
+                                new
+                                and wonderful
+                                to discover. An evening spent at Estiene is like boarding a golden ship sailing through
+                                a
+                                Parisian night.”</h2>
+                            <h4>Maya Peterson</h4>
+                            <p class="mb-0">CLIENT OF BAKERY</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item text-white text-center">
+                        <div>
+                            <h2 class="mb-5">“Because a restaurant’s story is never complete, there is always something
+                                new
+                                and wonderful
+                                to discover. An evening spent at Estiene is like boarding a golden ship sailing through
+                                a
+                                Parisian night.”</h2>
+                            <h4>Maya Peterson</h4>
+                            <p class="mb-0">CLIENT OF BAKERY</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item text-white text-center">
+                        <div>
+                            <h2 class="mb-5">“Because a restaurant’s story is never complete, there is always something
+                                new
+                                and wonderful
+                                to discover. An evening spent at Estiene is like boarding a golden ship sailing through
+                                a
+                                Parisian night.”</h2>
+                            <h4>Maya Peterson</h4>
+                            <p class="mb-0">CLIENT OF BAKERY</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <section class="py-5 bg-white pricingPlan">
+            <div class="container-xl">
+                <div class="row pt-5">
+                    <div class="col-12 mb-5">
+                        <div class="text-center">
+                            <h5 class="title">CHOOSE YOUR PERFECT</h5>
+                            <h1 class="bigHeading">EXPLORE OUR PRICING PLANS</h1>
+                            <p class="discription">We are building our confectionery as we would like to see all small
+                                businesses: honest, customer-oriented</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 mb-5">
+                        <div class="pricingCart">
+                            <img src="./assets/images/pricing/price-1.jpg" class="img-fluid" alt="pricing">
+                            <h5 class="textPrimary pricingCategory mb-4">STANDARD</h5>
+                            <h1 class="mb-4">$150.00</h1>
+                            <ul class="listStyleNone mb-4">
+                                <li><i class="fa-solid fa-check textPrimary me-1 fs-18"></i> Chocolate Box</li>
+                                <li><i class="fa-solid fa-check textPrimary me-1 fs-18"></i> One of Cupcakes Kit</li>
+                                <li><i class="fa-solid fa-check textPrimary me-1 fs-18"></i> Chocolate Truffles or
+                                    Candies</li>
+                                <li><i class="fa-solid fa-check textPrimary me-1 fs-18"></i> Fruit or Chocolate Cake
+                                </li>
+                            </ul>
+                            <button class="btnPrimary">CHOOSE A PLAN</button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 mb-5">
+                        <div class="pricingCart">
+                            <img src="./assets/images/pricing/price-2.jpg" class="img-fluid" alt="pricing">
+                            <h5 class="textPrimary pricingCategory mb-4">ULTRA</h5>
+                            <h1 class="mb-4">$200.00</h1>
+                            <ul class="listStyleNone mb-4">
+                                <li><i class="fa-solid fa-check textPrimary me-1 fs-18"></i> Chocolate Box</li>
+                                <li><i class="fa-solid fa-check textPrimary me-1 fs-18"></i> One of Cupcakes Kit</li>
+                                <li><i class="fa-solid fa-check textPrimary me-1 fs-18"></i> Chocolate Truffles or
+                                    Candies</li>
+                                <li><i class="fa-solid fa-check textPrimary me-1 fs-18"></i> Fruit or Chocolate Cake
+                                </li>
+                            </ul>
+                            <button class="btnPrimary">CHOOSE A PLAN</button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 mb-5">
+                        <div class="pricingCart">
+                            <img src="./assets/images/pricing/price-3.jpg" class="img-fluid" alt="pricing">
+                            <h5 class="textPrimary pricingCategory mb-4">PREMIUM</h5>
+                            <h1 class="mb-4">$300.00</h1>
+                            <ul class="listStyleNone mb-4">
+                                <li><i class="fa-solid fa-check textPrimary me-1 fs-18"></i> Chocolate Box</li>
+                                <li><i class="fa-solid fa-check textPrimary me-1 fs-18"></i> One of Cupcakes Kit</li>
+                                <li><i class="fa-solid fa-check textPrimary me-1 fs-18"></i> Chocolate Truffles or
+                                    Candies</li>
+                                <li><i class="fa-solid fa-check textPrimary me-1 fs-18"></i> Fruit or Chocolate Cake
+                                </li>
+                            </ul>
+                            <button class="btnPrimary">CHOOSE A PLAN</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer pt-5 bgDark">
+        <div class="container-xxl">
+            <div class="row text-white">
+                <div class="col-12 mb-3">
+                    <div class="footerLogo m-auto">
+                        <a href="./index.html" class="d-inline-block">
+                            <img src="./assets/images/footerLogo.png" class="img-fluid" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 mb-3">
+                    <div class="footerContent">
+                        <ul class="listStyleNone">
+                            <li class="mb-3"><i class="fa-solid fa-location-dot me-2 textPrimary fs-20"></i> 88
+                                MACDONALD
+                                STREET, B5 6TN,
+                                UK</li>
+                            <li><i class="fa-solid fa-phone me-2 textPrimary fs-20"></i> +44 7375 370010</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 mb-3">
+                    <div class="footerContent text-center">
+                        <h3 class="mb-3 fs-18">Whisper to us about your feelings, and we will prepare what you need now.
+                        </h3>
+                        <div class="d-flex justify-content-center gap-10">
+                            <a href="#" class="socialIcon flexCenter">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="socialIcon flexCenter">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#" class="socialIcon flexCenter">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 mb-3">
+                    <div class="footerContent">
+                        <ul class="listStyleNone quickLinks">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Refund policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Contact us </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottomFooter border-top py-3">
+            <p class="text-center textLight mb-0">Copyright © 2023 cupbeans. All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- aos animation -->
+    <script src="./assets/vendor/aos/js/aos.js"></script>
+    <!-- Bootstrap -->
+    <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- jquery -->
+    <script src="./assets/vendor/jquery/jquery.js"></script>
+    <!-- select2 -->
+    <script src="./assets/vendor/select2/js/select2.min.js"></script>
+    <!-- Custom Js -->
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

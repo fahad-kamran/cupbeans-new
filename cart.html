@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - cupbeans</title>
+    <link rel="shortcut icon" href="./assets/images/favIcon.png" type="image/x-icon">
+    <!-- aos animation -->
+    <link rel="stylesheet" href="./assets/vendor/aos/css/aos.css">
+    <!-- select2 -->
+    <link rel="stylesheet" href="./assets/vendor/select2/css/select2.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- fontawesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+        integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <header class="header border-bottom">
+        <section class="bgPrimary py-2 d-none d-lg-block">
+            <div class="container-xxl text-white text-center">
+                <p class="mb-0">Sign up for 20% off your first order. <a href="#"
+                        class="text-white text-decoration-underline">Subscribe</a>.</p>
+            </div>
+        </section>
+        <section class="py-3 bgLight position-relative">
+            <div class="container-xxl">
+                <div class="rowBetweenCenter position-relative">
+                    <div class="logoContainer">
+                        <a href="./index.html" class="d-inline-block">
+                            <img src="./assets/images/logo.png" class="img-fluid" alt="logo">
+                        </a>
+                    </div>
+                    <div class="eComm">
+                        <div class="d-flex align-items-center">
+                            <a href="./shop.html" class="shopBtn me-3">SHOP</a>
+                            <button class="iconContainer flexCenter me-3">
+                                <i class="fa-solid fa-cart-plus icon"></i>
+                            </button>
+                            <button class="iconContainer flexCenter" id="headerSearchButton">
+                                <i class="fa-solid fa-magnifying-glass icon rotate90" id="togleIcon"></i>
+                            </button>
+                            <div class="headerSearchField shadow px-4 py-5" id="headerSearchField">
+                                <form action="#">
+                                    <div class="input-group border-bottom">
+                                        <input type="text" class="form-control border-0" placeholder="Search...">
+                                        <button type="submit" class="input-group-text bg-transparent border-0"
+                                            id="basic-addon2">
+                                            <i class="fa-solid fa-magnifying-glass fs-20 rotate90"></i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main class="main cart">
+        <section class="py-5">
+            <div class="container-xl">
+                <!-- if cart is empty -->
+                <div class="emptyCart flexCenter">
+                    <div class="col-12 col-md-6 col-lg-4 m-auto">
+                        <a href="#" class="btnPrimary">Return To Shop</a>
+                    </div>
+                </div>
+                <!-- hide on mobile and display on desktop -->
+                <div class="desktop d-none d-md-block">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr data-aos="fade-down">
+                                <th>PRODUCT</th>
+                                <th>PRICE</th>
+                                <th>QUANTITY</th>
+                                <th colspan="2">SUBTOTAL</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- loop this tr -->
+                            <tr data-aos="fade-up">
+                                <td>
+                                    <a href="#" class="d-flex align-items-center">
+                                        <img src="./assets/images/shop/cartsmall1.jpg" alt="item">
+                                        <div class="ps-2">
+                                            <span class="title">Rose Truffle
+                                            </span>
+                                            <span class="fs-12 d-block textGrey">Lorem, ipsum dolor.</span>
+                                        </div>
+
+                                    </a>
+                                </td>
+                                <td><span class="fs-22">£ 2.00</span></td>
+                                <td>
+                                    <div class="qtyBox">
+                                        <button class="cartDecreament">
+                                            <i class="fa-solid fa-chevron-down"></i>
+                                        </button>
+                                        <input type="text" value="1" min="1" class="cartValue">
+                                        <button class="cartIncreament">
+                                            <i class="fa-solid fa-chevron-up"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                                <td><span class="fs-22">£ 2.00</span></td>
+                                <td>
+                                    <button class="close"><i class="fa-solid fa-xmark"></i></button>
+                                </td>
+                            </tr>
+                            <tr data-aos="fade-up">
+                                <td>
+                                    <a href="#" class="d-flex align-items-center">
+                                        <img src="./assets/images/shop/cartsmall1.jpg" alt="item">
+                                        <div class="ps-2">
+                                            <span class="title">Rose Truffle
+                                            </span>
+                                            <span class="fs-12 d-block textGrey">Lorem, ipsum dolor.</span>
+                                        </div>
+
+                                    </a>
+                                </td>
+                                <td><span class="fs-22">£ 2.00</span></td>
+                                <td>
+                                    <div class="qtyBox">
+                                        <button class="cartDecreament">
+                                            <i class="fa-solid fa-chevron-down"></i>
+                                        </button>
+                                        <input type="text" value="1" min="1" class="cartValue">
+                                        <button class="cartIncreament">
+                                            <i class="fa-solid fa-chevron-up"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                                <td><span class="fs-22">£ 2.00</span></td>
+                                <td>
+                                    <button class="close"><i class="fa-solid fa-xmark"></i></button>
+                                </td>
+                            </tr>
+                            <tr data-aos="fade-up">
+                                <td>
+                                    <a href="#" class="d-flex align-items-center">
+                                        <img src="./assets/images/shop/cartsmall1.jpg" alt="item">
+                                        <div class="ps-2">
+                                            <span class="title">Rose Truffle
+                                            </span>
+                                            <span class="fs-12 d-block textGrey">Lorem, ipsum dolor.</span>
+                                        </div>
+
+                                    </a>
+                                </td>
+                                <td><span class="fs-22">£ 2.00</span></td>
+                                <td>
+                                    <div class="qtyBox">
+                                        <button class="cartDecreament">
+                                            <i class="fa-solid fa-chevron-down"></i>
+                                        </button>
+                                        <input type="text" value="1" min="1" class="cartValue">
+                                        <button class="cartIncreament">
+                                            <i class="fa-solid fa-chevron-up"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                                <td><span class="fs-22">£ 2.00</span></td>
+                                <td>
+                                    <button class="close"><i class="fa-solid fa-xmark"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- display on mobile hide on desktop -->
+                <diiv class="mobile d-block d-md-none">
+                    <!-- loop -->
+                    <div class="border-bottom mb-5 cartItem pb-3" data-aos="fade-up">
+                        <div class="position-relative">
+                            <img src="./assets/images/shop/cartsmall1.jpg" alt="">
+                            <button class="close">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </div>
+                        <div class="rowBetweenCenter mb-2">
+                            <h5 class="mb-0">Product:</h5>
+                            <a href="#" class="title">Rose Truffle</a>
+                        </div>
+                        <div class="rowBetweenCenter mb-2">
+                            <h5 class="mb-0">Price:</h5>
+                            <span class="fs-22">£ 2.00</span>
+                        </div>
+                        <div class="rowBetweenCenter mb-2">
+                            <h5 class="mb-0">Qty:</h5>
+                            <div class="qtyBox">
+                                <button class="cartDecreament">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                                <input type="text" value="1" min="1" class="cartValue">
+                                <button class="cartIncreament">
+                                    <i class="fa-solid fa-chevron-up"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="rowBetweenCenter mb-2">
+                            <h5 class="mb-0">Subtotal:</h5>
+                            <span class="fs-22">£ 2.00</span>
+                        </div>
+                    </div>
+                    <div class="border-bottom mb-5 cartItem pb-3" data-aos="fade-up">
+                        <div class="position-relative">
+                            <img src="./assets/images/shop/cartsmall1.jpg" alt="">
+                            <button class="close">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </div>
+                        <div class="rowBetweenCenter mb-2">
+                            <h5 class="mb-0">Product:</h5>
+                            <a href="#" class="title">Rose Truffle</a>
+                        </div>
+                        <div class="rowBetweenCenter mb-2">
+                            <h5 class="mb-0">Price:</h5>
+                            <span class="fs-22">£ 2.00</span>
+                        </div>
+                        <div class="rowBetweenCenter mb-2">
+                            <h5 class="mb-0">Qty:</h5>
+                            <div class="qtyBox">
+                                <button class="cartDecreament">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                                <input type="text" value="1" min="1" class="cartValue">
+                                <button class="cartIncreament">
+                                    <i class="fa-solid fa-chevron-up"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="rowBetweenCenter mb-2">
+                            <h5 class="mb-0">Subtotal:</h5>
+                            <span class="fs-22">£ 2.00</span>
+                        </div>
+                    </div>
+                    <!-- loop -->
+                </diiv>
+                <div class="d-flex justify-content-end">
+                    <button class="btnPrimary w-auto px-5">UPDATE CART</button>
+                </div>
+            </div>
+        </section>
+        <section class="py-5">
+            <div class="container-xl">
+                <div class="row justify-content-between">
+                    <div class="col-12 col-md-6 col-lg-4 mb-5 mb-md-0" data-aos="fade-down-right">
+                        <div class="cuoponCode">
+                            <h3>DISCOUNT</h3>
+                            <p class="mb-0 fs-14">Enter your coupon code if you have one.</p>
+                            <form action="#">
+                                <div class="form-group mt-4">
+                                    <input type="text" placeholder="Cuopon code" class="form-control mb-4" />
+                                    <button class="btnOutlinedPrimary" type="submit">APPLY A COUPON</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4" data-aos="fade-down-left">
+                        <div class="cartTotals">
+                            <h3>CART TOTALS</h3>
+                            <h5 class="mb-3">Subtotal: <span class="textPrimary fw-light fst-italic fontSecondary">£
+                                    9.00</span></h5>
+                            <h5 class="mb-3">Discount: <span class="textPrimary fw-light fst-italic fontSecondary">£
+                                    9.00</span></h5>
+                            <h5 class="mb-3">Tax: <span class="textPrimary fw-light fst-italic fontSecondary">£
+                                    9.00</span></h5>
+                            <h5 class="mb-3">Total: <span class="textPrimary fw-light fst-italic fontSecondary">£
+                                    9.00</span></h5>
+                            <button class="btnPrimary">PROCEED TO CHECKOUT</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer pt-5 bgDark">
+        <div class="container-xxl">
+            <div class="row text-white">
+                <div class="col-12 mb-3">
+                    <div class="footerLogo m-auto">
+                        <a href="./index.html" class="d-inline-block">
+                            <img src="./assets/images/footerLogo.png" class="img-fluid" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 mb-3">
+                    <div class="footerContent">
+                        <ul class="listStyleNone">
+                            <li class="mb-3"><i class="fa-solid fa-location-dot me-2 textPrimary fs-20"></i> 88
+                                MACDONALD
+                                STREET, B5 6TN,
+                                UK</li>
+                            <li><i class="fa-solid fa-phone me-2 textPrimary fs-20"></i> +44 7375 370010</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 mb-3">
+                    <div class="footerContent text-center">
+                        <h3 class="mb-3 fs-18">Whisper to us about your feelings, and we will prepare what you need now.
+                        </h3>
+                        <div class="d-flex justify-content-center gap-10">
+                            <a href="#" class="socialIcon flexCenter">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="socialIcon flexCenter">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#" class="socialIcon flexCenter">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 mb-3">
+                    <div class="footerContent">
+                        <ul class="listStyleNone quickLinks">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Refund policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Contact us </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottomFooter border-top py-3">
+            <p class="text-center textLight mb-0">Copyright © 2023 cupbeans. All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- aos animation -->
+    <script src="./assets/vendor/aos/js/aos.js"></script>
+    <!-- Bootstrap -->
+    <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- jquery -->
+    <script src="./assets/vendor/jquery/jquery.js"></script>
+    <!-- select2 -->
+    <script src="./assets/vendor/select2/js/select2.min.js"></script>
+    <!-- Custom Js -->
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

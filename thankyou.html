@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - cupbeans</title>
+    <link rel="shortcut icon" href="./assets/images/favIcon.png" type="image/x-icon">
+    <!-- aos animation -->
+    <link rel="stylesheet" href="./assets/vendor/aos/css/aos.css">
+<!-- select2 -->
+    <link rel="stylesheet" href="./assets/vendor/select2/css/select2.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- fontawesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+        integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <header class="header border-bottom">
+        <section class="bgPrimary py-2 d-none d-lg-block">
+            <div class="container-xxl text-white text-center">
+                <p class="mb-0">Sign up for 20% off your first order. <a href="#"
+                        class="text-white text-decoration-underline">Subscribe</a>.</p>
+            </div>
+        </section>
+        <section class="py-3 bgLight position-relative">
+            <div class="container-xxl">
+                <div class="rowBetweenCenter position-relative">
+                    <div class="logoContainer">
+                        <a href="./index.html" class="d-inline-block">
+                            <img src="./assets/images/logo.png" class="img-fluid" alt="logo">
+                        </a>
+                    </div>
+                    <div class="eComm">
+                        <div class="d-flex align-items-center">
+                            <a href="./shop.html" class="shopBtn me-3">SHOP</a>
+                            <button class="iconContainer flexCenter me-3">
+                                <i class="fa-solid fa-cart-plus icon"></i>
+                            </button>
+                            <button class="iconContainer flexCenter" id="headerSearchButton">
+                                <i class="fa-solid fa-magnifying-glass icon rotate90" id="togleIcon"></i>
+                            </button>
+                            <div class="headerSearchField shadow px-4 py-5" id="headerSearchField">
+                                <form action="#">
+                                    <div class="input-group border-bottom">
+                                        <input type="text" class="form-control border-0" placeholder="Search...">
+                                        <button type="submit" class="input-group-text bg-transparent border-0"
+                                            id="basic-addon2">
+                                            <i class="fa-solid fa-magnifying-glass fs-20 rotate90"></i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main class="main thankyou">
+        <section class="py-5 bgWhite">
+            <div class="container-xl">
+                <div class="row">
+                    <div class="col-12 mb-3">
+                        <p class="mb-0 fs-18">Thank you. Your order has been received.</p>
+                    </div>
+                    <div class="col-12 mb-3">
+                        <div class="d-flex bgLight p-4">
+                            <div class="borderEndDotted pe-3">
+                                <h4 class="mb-2">Order <br> Number:</h4>
+                                <h4 class="mb-0 price textPrimary">2430</h4>
+                            </div>
+                            <div class="ps-3">
+                                <p class="mb-3 fs-14">Date: <span class="textPrimary fw-bold">July 22, 2023</span></p>
+                                <p class="mb-3 fs-14">Total: <span class="textPrimary fw-bold">£ 9.00</span></p>
+                                <p class="mb-0 fs-14">Discount: <span class="textPrimary fw-bold">£ 9.00</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-3">
+                        <p class="mb-0 fs-18">Pay with cash upon delivery.</p>
+                    </div>
+                    <div class="col-12 mb-4">
+                        <h3 class="mb-0">Pay with cash upon delivery.</h3>
+                    </div>
+                    <div class="col-12 mb-4">
+                        <div class="border-bottom col-md-6 col-lg-5">
+                            <div class="rowBetweenCenter mb-3">
+                                <span><a href="#" class="textDark fs-18">Rose Truffle</a> <span>× 1</span></span>
+                                <span class="textPrimary fs-18">£ 2.00</span>
+                            </div>
+                            <div class="rowBetweenCenter mb-3">
+                                <span><a href="#" class="textDark fs-18">Choco Creme & Nut</a> <span>× 1</span></span>
+                                <span class="textPrimary fs-18">£ 2.00</span>
+                            </div>
+                            <div class="rowBetweenCenter mb-3">
+                                <span><a href="#" class="textDark fs-18">Praline with Plum</a> <span>× 1</span></span>
+                                <span class="textPrimary fs-18">£ 2.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-4">
+                        <div class="border-bottom col-md-6 col-lg-5">
+                            <div class="rowBetweenCenter mb-3">
+                                <span class="fw-500 fs-18">Subtotal:</span>
+                                <span class="textPrimary fs-18">£ 2.00</span>
+                            </div>
+                            <div class="rowBetweenCenter mb-3">
+                                <span class="fw-500 fs-18">Discount:</span>
+                                <span class="textPrimary fs-18">£ 2.00</span>
+                            </div>
+                            <div class="rowBetweenCenter mb-3">
+                                <span class="fw-500 fs-18">Tax:</span>
+                                <span class="textPrimary fs-18">£ 2.00</span>
+                            </div>
+                            <div class="rowBetweenCenter mb-3">
+                                <span class="fw-500 fs-18">Total:</span>
+                                <span class="textPrimary fs-18">£ 2.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-4">
+                        <div class="border-bottom col-md-6 col-lg-5">
+                            <div class="d-flex gap-10 mb-3">
+                                <span class="fw-500 fs-18">Note:</span>
+                                <span class="textPrimary fs-18">Voluptate obcaecati</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer pt-5 bgDark">
+        <div class="container-xxl">
+            <div class="row text-white">
+                <div class="col-12 mb-3">
+                    <div class="footerLogo m-auto">
+                        <a href="./index.html" class="d-inline-block">
+                            <img src="./assets/images/footerLogo.png" class="img-fluid" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 mb-3">
+                    <div class="footerContent">
+                        <ul class="listStyleNone">
+                            <li class="mb-3"><i class="fa-solid fa-location-dot me-2 textPrimary fs-20"></i> 88
+                                MACDONALD
+                                STREET, B5 6TN,
+                                UK</li>
+                            <li><i class="fa-solid fa-phone me-2 textPrimary fs-20"></i> +44 7375 370010</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 mb-3">
+                    <div class="footerContent text-center">
+                        <h3 class="mb-3 fs-18">Whisper to us about your feelings, and we will prepare what you need now.
+                        </h3>
+                        <div class="d-flex justify-content-center gap-10">
+                            <a href="#" class="socialIcon flexCenter">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="socialIcon flexCenter">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#" class="socialIcon flexCenter">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 mb-3">
+                    <div class="footerContent">
+                        <ul class="listStyleNone quickLinks">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Refund policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Contact us </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottomFooter border-top py-3">
+            <p class="text-center textLight mb-0">Copyright © 2023 cupbeans. All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- aos animation -->
+    <script src="./assets/vendor/aos/js/aos.js"></script>
+    <!-- Bootstrap -->
+    <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- jquery -->
+    <script src="./assets/vendor/jquery/jquery.js"></script>
+<!-- select2 -->
+<script src="./assets/vendor/select2/js/select2.min.js"></script>
+    <!-- Custom Js -->
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
