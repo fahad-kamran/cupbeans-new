@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="./assets/images/favIcon.png" type="image/x-icon">
     <!-- aos animation -->
     <link rel="stylesheet" href="./assets/vendor/aos/css/aos.css">
-<!-- select2 -->
+    <!-- select2 -->
     <link rel="stylesheet" href="./assets/vendor/select2/css/select2.min.css">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css">
@@ -142,13 +142,13 @@
                                                 <!-- handle assets/js/app.js -->
                                                 <div class="flavourQty d-flex align-items-center">
                                                     <!-- decreamentcall -->
-                                                    <button onclick="flavourOneDec()" type="button" class="flexCenter">
+                                                    <button type="button" class="flexCenter flavourDec">
                                                         <i class="fa-solid fa-minus fs-10"></i>
                                                     </button>
                                                     <!-- value handle by id -->
-                                                    <input type="text" value="1" min="1" id="flavourOneValue" readonly>
+                                                    <input type="text" value="1" min="1" class="flavourValue" readonly>
                                                     <!-- increament call -->
-                                                    <button onclick="flavourOneInc()" type="button" class="flexCenter">
+                                                    <button type="button" class="flexCenter flavourInc">
                                                         <i class="fa-solid fa-plus fs-10"></i>
                                                     </button>
                                                 </div>
@@ -165,13 +165,13 @@
                                                 <!-- handle assets/js/app.js -->
                                                 <div class="flavourQty d-flex align-items-center">
                                                     <!-- decreamentcall -->
-                                                    <button onclick="flavourTwoDec()" type="button" class="flexCenter">
+                                                    <button type="button" class="flexCenter flavourDec">
                                                         <i class="fa-solid fa-minus fs-10"></i>
                                                     </button>
                                                     <!-- value handle by id -->
-                                                    <input type="text" value="1" min="1" id="flavourTwoValue" readonly>
+                                                    <input type="text" value="1" min="1" class="flavourValue" readonly>
                                                     <!-- increament call -->
-                                                    <button onclick="flavourTwoInc()" type="button" class="flexCenter">
+                                                    <button type="button" class="flexCenter flavourInc">
                                                         <i class="fa-solid fa-plus fs-10"></i>
                                                     </button>
                                                 </div>
@@ -188,16 +188,13 @@
                                                 <!-- handle assets/js/app.js -->
                                                 <div class="flavourQty d-flex align-items-center">
                                                     <!-- decreamentcall -->
-                                                    <button onclick="flavourThreeDec()" type="button"
-                                                        class="flexCenter">
+                                                    <button type="button" class="flexCenter flavourDec">
                                                         <i class="fa-solid fa-minus fs-10"></i>
                                                     </button>
                                                     <!-- value handle by id -->
-                                                    <input type="text" value="1" min="1" id="flavourThreeValue"
-                                                        readonly>
+                                                    <input type="text" value="1" min="1" class="flavourValue" readonly>
                                                     <!-- increament call -->
-                                                    <button onclick="flavourThreeInc()" type="button"
-                                                        class="flexCenter">
+                                                    <button type="button" class="flexCenter flavourInc">
                                                         <i class="fa-solid fa-plus fs-10"></i>
                                                     </button>
                                                 </div>
@@ -214,13 +211,13 @@
                                                 <!-- handle assets/js/app.js -->
                                                 <div class="flavourQty d-flex align-items-center">
                                                     <!-- decreamentcall -->
-                                                    <button onclick="flavourFourDec()" type="button" class="flexCenter">
+                                                    <button type="button" class="flexCenter flavourDec">
                                                         <i class="fa-solid fa-minus fs-10"></i>
                                                     </button>
                                                     <!-- value handle by id -->
-                                                    <input type="text" value="1" min="1" id="flavourFourValue" readonly>
+                                                    <input type="text" value="1" min="1" class="flavourValue" readonly>
                                                     <!-- increament call -->
-                                                    <button onclick="flavourFourInc()" type="button" class="flexCenter">
+                                                    <button type="button" class="flexCenter flavourInc">
                                                         <i class="fa-solid fa-plus fs-10"></i>
                                                     </button>
                                                 </div>
@@ -230,11 +227,11 @@
                                 </div>
                                 <div class="col-12 my-5">
                                     <div class="productCounter d-flex align-items-center">
-                                        <button type="button" class="flexCenter" onclick="variableDecCounter()">
+                                        <button type="button" class="flexCenter variableDecCounter">
                                             <i class="fa-solid fa-minus fs-16"></i>
                                         </button>
-                                        <input type="text" value="1" min="1" id="variableCounterValue" readonly>
-                                        <button type="button" class="flexCenter" onclick="variableIncCounter()">
+                                        <input type="text" value="1" min="1" class="variableCounterValue" readonly>
+                                        <button type="button" class="flexCenter variableIncCounter">
                                             <i class="fa-solid fa-plus fs-16"></i>
                                         </button>
                                     </div>
@@ -305,7 +302,8 @@
                 </div>
                 <div class="col-12 col-lg-6 mb-3">
                     <div class="footerContent text-center">
-                        <h3 class="mb-3 fs-18">Whisper to us about your feelings, and we will prepare what you need now.</h3>
+                        <h3 class="mb-3 fs-18">Whisper to us about your feelings, and we will prepare what you need now.
+                        </h3>
                         <div class="d-flex justify-content-center gap-10">
                             <a href="#" class="socialIcon flexCenter">
                                 <i class="fa-brands fa-facebook-f"></i>
@@ -343,8 +341,8 @@
     <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- jquery -->
     <script src="./assets/vendor/jquery/jquery.js"></script>
-<!-- select2 -->
-<script src="./assets/vendor/select2/js/select2.min.js"></script>
+    <!-- select2 -->
+    <script src="./assets/vendor/select2/js/select2.min.js"></script>
     <!-- Custom Js -->
     <script src="./assets/js/app.js"></script>
 </body>

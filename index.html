@@ -42,27 +42,87 @@
                     <div class="eComm">
                         <div class="d-flex align-items-center">
                             <a href="./shop.html" class="shopBtn me-3">SHOP</a>
-                            <button class="iconContainer flexCenter me-3">
+                            <button class="iconContainer flexCenter me-3 cartOpenBtn">
+                                <span class="position-absolute countValue flexCenter">2</span>
                                 <i class="fa-solid fa-cart-plus icon"></i>
                             </button>
                             <button class="iconContainer flexCenter" id="headerSearchButton">
                                 <i class="fa-solid fa-magnifying-glass icon rotate90" id="togleIcon"></i>
                             </button>
-                            <div class="headerSearchField shadow px-4 py-5" id="headerSearchField">
-                                <form action="#">
-                                    <div class="input-group border-bottom">
-                                        <input type="text" class="form-control border-0" placeholder="Search...">
-                                        <button type="submit" class="input-group-text bg-transparent border-0"
-                                            id="basic-addon2">
-                                            <i class="fa-solid fa-magnifying-glass fs-20 rotate90"></i>
-                                        </button>
-                                    </div>
-                                </form>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="headerSearchField shadow px-4 py-5" id="headerSearchField">
+                <form action="#">
+                    <div class="input-group border-bottom">
+                        <input type="text" class="form-control border-0" placeholder="Search...">
+                        <button type="submit" class="input-group-text bg-transparent border-0"
+                            id="basic-addon2">
+                            <i class="fa-solid fa-magnifying-glass fs-20 rotate90"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <!-- custome cart drawer -->
+            <div class="customCartDrawer">
+                <div class="drawer" id="cartDrawer">
+                    <div class="header p-3 rowBetweenCenter border-bottom">
+                        <h5 class="mb-0">Cart</h5>
+                        <button class="cartCloseBtn">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <div class="body p-4">
+                        <!-- if cart is empty -->
+                        <!-- <p class="mb-0 text-center">No products in the cart.</p> -->
+                        <!-- if cart is empty -->
+                        <!-- if cart value is exist -->
+                        <div class="mainn">
+                            <div class="border-bottom mb-3">
+                                <!-- loop -->
+                                <div class="rowBetweenCenter gap-10 mb-3">
+                                    <img src="./assets/images/shop/cartsmall1.jpg" alt="small">
+                                    <div>
+                                        <a href="#" class="d-block text-dark">Milk Chocolate Truffle</a>
+                                        <span><span class="textGrey">1</span> × £ 2.00</span>
+                                    </div>
+                                    <i class="fa-solid fa-xmark"></i>
+                                </div>
+                                <div class="rowBetweenCenter gap-10 mb-3">
+                                    <img src="./assets/images/shop/cartsmall1.jpg" alt="small">
+                                    <div>
+                                        <a href="#" class="d-block text-dark">Milk Chocolate Truffle</a>
+                                        <span><span class="textGrey">1</span> × £ 2.00</span>
+                                    </div>
+                                    <i class="fa-solid fa-xmark"></i>
+                                </div>
+                                <div class="rowBetweenCenter gap-10 mb-3">
+                                    <img src="./assets/images/shop/cartsmall1.jpg" alt="small">
+                                    <div>
+                                        <a href="#" class="d-block text-dark">Milk Chocolate Truffle</a>
+                                        <span><span class="textGrey">1</span> × £ 2.00</span>
+                                    </div>
+                                    <i class="fa-solid fa-xmark"></i>
+                                </div>
+                                <div class="rowBetweenCenter gap-10 mb-3">
+                                    <img src="./assets/images/shop/cartsmall1.jpg" alt="small">
+                                    <div>
+                                        <a href="#" class="d-block text-dark">Milk Chocolate Truffle</a>
+                                        <span><span class="textGrey">1</span> × £ 2.00</span>
+                                    </div>
+                                    <i class="fa-solid fa-xmark"></i>
+                                </div>
+                            </div>
+                            <h5 class="mb-3">Subtotal: <span>£ 6.00</span></h5>
+                            <a href="#" class="btnPrimary mb-3">VIEW CART</a>
+                            <a href="#" class="btnOutlinedPrimary">CHECKOUT</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cartBackdrop"></div>
+            </div>
+            <!-- custome cart drawer -->
         </section>
     </header>
     <main class="main home">
@@ -302,7 +362,7 @@
         <section class="section-7 videoSection py-5">
             <div class="container-xl py-5">
                 <div class="content flexCenter">
-                    <div role="button" data-bs-toggle="modal" data-bs-target="#videoModal" class="videoBtn flexCenter">
+                    <div role="button" id="openModalButton" class="videoBtn flexCenter">
                         <i class="fa-solid fa-play fs-40 text-white"></i>
                     </div>
                 </div>
@@ -311,7 +371,10 @@
             <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/TKnufs85hXk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" id="videoPlayer"></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/TKnufs85hXk"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            id="videoPlayer"></iframe>
                     </div>
                 </div>
             </div>

@@ -347,10 +347,11 @@ h6,
 .header .headerSearchField {
     position: absolute;
     background-color: var(--colorWhite);
-    top: calc(100% + 10px);
+    top: 100%;
     right: 0;
     max-width: 400px;
     width: 100%;
+    z-index: 1000;
     display: none;
 }
 
@@ -361,7 +362,62 @@ header .headerSearchField.show {
 .header .headerSearchField input:focus {
     box-shadow: none;
 }
+.header .drawer {
+    position: fixed;
+    top: 0;
+    right: -330px;
+    /* Initially hidden */
+    width: 100%;
+    max-width: 330px;
+    height: 100%;
+    overflow-y: auto;
+    background-color: var(--colorWhite);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: right 0.3s ease-in-out;
+    z-index: 9999;
+    /* Make sure the drawer is above the backdrop */
+}
+.header .cartOpenBtn{
+    position: relative;
+}
+.header .cartOpenBtn .countValue{
+    position: absolute;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: var(--colorPrimary);
+    color: var(--colorWhite);
+    border-radius: 50%;
+    font-size: 14px;
+    top: 0;
+    right: 0;
+}
+.header .drawer .cartCloseBtn{
+    border: none;
+    outline: none;
+    background: none;
+}
+.header .drawer img{
+    max-width: 60px;
+    height: auto;
+}
+.header .cartBackdrop {
+    position: fixed;
+   inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Semi-transparent black color */
+    display: none;
+    z-index: 9998;
+    /* Place the backdrop below the drawer */
+}
 
+.drawer-open {
+    right: 0 !important;
+}
+
+.drawer-open~.cartBackdrop {
+    display: block;
+}
 .header .logoContainer {
     max-width: 350px;
     height: auto;
