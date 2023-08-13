@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cupbeans</title>
+    <link rel="shortcut icon" href="./assets/images/favIcon.png" type="image/x-icon">
+    <!-- aos animation -->
+    <link rel="stylesheet" href="./assets/vendor/aos/css/aos.css">
+    <!-- select2 -->
+    <link rel="stylesheet" href="./assets/vendor/select2/css/select2.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css">
+    <!-- owl-carousel -->
+    <link rel="stylesheet" href="./assets/vendor/owl-carousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/vendor/owl-carousel/css/owl.theme.default.min.css">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- fontawesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+        integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <header class="header border-bottom">
+        <section class="bgPrimary py-2 d-none d-lg-block">
+            <div class="container-xxl text-white text-center">
+                <p class="mb-0">Sign up for 20% off your first order. <a href="#"
+                        class="text-white text-decoration-underline">Subscribe</a>.</p>
+            </div>
+        </section>
+        <section class="py-3 bgLight position-relative">
+            <div class="container-xxl">
+                <div class="rowBetweenCenter position-relative">
+                    <div class="logoContainer">
+                        <a href="./index.html" class="d-inline-block">
+                            <img src="./assets/images/logo.png" class="img-fluid" alt="logo">
+                        </a>
+                    </div>
+                    <div class="eComm">
+                        <div class="d-flex align-items-center">
+                            <a href="./shop.html" class="shopBtn me-3">SHOP</a>
+                            <button class="iconContainer flexCenter me-3 cartOpenBtn">
+                                <span class="position-absolute countValue flexCenter">2</span>
+                                <i class="fa-solid fa-cart-plus icon"></i>
+                            </button>
+                            <button class="iconContainer flexCenter" id="headerSearchButton">
+                                <i class="fa-solid fa-magnifying-glass icon rotate90" id="togleIcon"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="headerSearchField shadow px-4 py-5" id="headerSearchField">
+                <form action="#">
+                    <div class="input-group border-bottom">
+                        <input type="text" class="form-control border-0" placeholder="Search...">
+                        <button type="submit" class="input-group-text bg-transparent border-0" id="basic-addon2">
+                            <i class="fa-solid fa-magnifying-glass fs-20 rotate90"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <!-- custome cart drawer -->
+            <div class="customCartDrawer">
+                <div class="drawer" id="cartDrawer">
+                    <div class="header p-3 rowBetweenCenter border-bottom">
+                        <h5 class="mb-0">Cart</h5>
+                        <button class="cartCloseBtn">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <div class="body p-4">
+                        <!-- if cart is empty -->
+                        <!-- <p class="mb-0 text-center">No products in the cart.</p> -->
+                        <!-- if cart is empty -->
+                        <!-- if cart value is exist -->
+                        <div class="mainn">
+                            <div class="border-bottom mb-3">
+                                <!-- loop -->
+                                <div class="rowBetweenCenter gap-10 mb-3">
+                                    <img src="./assets/images/shop/cartsmall1.jpg" alt="small">
+                                    <div>
+                                        <a href="#" class="d-block text-dark">Milk Chocolate Truffle</a>
+                                        <span><span class="textGrey">1</span> × £ 2.00</span>
+                                    </div>
+                                    <i class="fa-solid fa-xmark"></i>
+                                </div>
+                                <div class="rowBetweenCenter gap-10 mb-3">
+                                    <img src="./assets/images/shop/cartsmall1.jpg" alt="small">
+                                    <div>
+                                        <a href="#" class="d-block text-dark">Milk Chocolate Truffle</a>
+                                        <span><span class="textGrey">1</span> × £ 2.00</span>
+                                    </div>
+                                    <i class="fa-solid fa-xmark"></i>
+                                </div>
+                                <div class="rowBetweenCenter gap-10 mb-3">
+                                    <img src="./assets/images/shop/cartsmall1.jpg" alt="small">
+                                    <div>
+                                        <a href="#" class="d-block text-dark">Milk Chocolate Truffle</a>
+                                        <span><span class="textGrey">1</span> × £ 2.00</span>
+                                    </div>
+                                    <i class="fa-solid fa-xmark"></i>
+                                </div>
+                                <div class="rowBetweenCenter gap-10 mb-3">
+                                    <img src="./assets/images/shop/cartsmall1.jpg" alt="small">
+                                    <div>
+                                        <a href="#" class="d-block text-dark">Milk Chocolate Truffle</a>
+                                        <span><span class="textGrey">1</span> × £ 2.00</span>
+                                    </div>
+                                    <i class="fa-solid fa-xmark"></i>
+                                </div>
+                            </div>
+                            <h5 class="mb-3">Subtotal: <span>£ 6.00</span></h5>
+                            <a href="#" class="btnPrimary mb-3">VIEW CART</a>
+                            <a href="#" class="btnOutlinedPrimary">CHECKOUT</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cartBackdrop"></div>
+            </div>
+            <!-- custome cart drawer -->
+        </section>
+    </header>
+    <main class="main authentication bg-light">
+        <div class="container-xl py-5">
+            <div class="col-12 col-md-8 col-lg-6 m-auto">
+                <div class="shadow bg-white rounded">
+                    <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
+                        <li class="nav-item w-50" role="presentation">
+                            <button class="nav-link border-0 w-100 active" id="login-tab" data-bs-toggle="tab"
+                                data-bs-target="#login-tab-pane" type="button" role="tab" aria-controls="login-tab-pane"
+                                aria-selected="true">Login</button>
+                        </li>
+                        <li class="nav-item w-50" role="presentation">
+                            <button class="nav-link border-0 w-100" id="register-tab" data-bs-toggle="tab"
+                                data-bs-target="#register-tab-pane" type="button" role="tab"
+                                aria-controls="register-tab-pane" aria-selected="false">Signup</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <!-- login -->
+                        <div class="tab-pane fade show active" id="login-tab-pane" role="tabpanel"
+                            aria-labelledby="login-tab" tabindex="0">
+                            <div class="col-12 py-5 px-4">
+                                <div class="loginBox">
+                                    <div class="mb-4">
+                                        <h3 class="mb-0 border-bottom pb-2">Login</h3>
+                                    </div>
+                                    <form action="#">
+                                        <div class="form-group mb-4">
+                                            <label class="form-label">Email*</label>
+                                            <input type="email" class="form-control" placeholder="Enter Email" required>
+                                        </div>
+                                        <div class="form-group mb-4 password-box">
+                                            <label class="form-label">Password*</label>
+                                            <input type="password" id="passwordInput" class="form-control"
+                                                placeholder="Enter Password" required>
+                                            <button type="button" class="password-eye" id="togglePassword">
+                                                <i class="fa-solid fa-eye icon textPrimary"></i>
+                                            </button>
+                                        </div>
+                                        <div class="mb-4">
+                                            <button type="submit" class="btnPrimary rounded">Log In</button>
+                                        </div>
+                                        <div class="mb-4 text-center">
+                                            <a href="#" class="textPrimary fs-16">Forgot Password?</a>
+                                        </div>
+                                        <div class="text-center">
+                                            <p class="mb-0">Don't have an account? <a href="#"
+                                                    class="textPrimary">Create
+                                                    Account</a></p>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- login -->
+                        <!-- register -->
+                        <div class="tab-pane fade" id="register-tab-pane" role="tabpanel" aria-labelledby="register-tab"
+                            tabindex="0">
+                            <div class="col-12 py-5 px-4">
+                                <div class="registerBox">
+                                    <div class="mb-3">
+                                        <h3 class="mb-0 border-bottom pb-2">Signup</h3>
+                                    </div>
+                                    <form action="#">
+                                        <div class="form-group mb-3">
+                                            <label class="form-label">User Name*</label>
+                                            <input type="text" class="form-control" placeholder="Enter Name" required>
+                                        </div>
+                                        <div class="form-group mb-3">
+                                            <label class="form-label">Email*</label>
+                                            <input type="email" class="form-control" placeholder="Enter Email" required>
+                                        </div>
+                                        <div class="form-group mb-3 password-box">
+                                            <label class="form-label">Password*</label>
+                                            <input type="password" id="passwordInput" class="form-control"
+                                                placeholder="Enter Password" required>
+                                            <button type="button" class="password-eye" id="togglePassword">
+                                                <i class="fa-solid fa-eye icon textPrimary"></i>
+                                            </button>
+                                        </div>
+                                        <div class="mb-3">
+                                            <button type="submit" class="btnPrimary rounded">Signup</button>
+                                        </div>
+                                        <div class="text-center">
+                                            <p class="mb-0">Already have an account? <a href="#"
+                                                    class="textPrimary">Login</a>
+                                            </p>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- register -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer pt-5 bgDark">
+        <div class="container-xxl">
+            <div class="row text-white">
+                <div class="col-12 mb-3">
+                    <div class="footerLogo m-auto">
+                        <a href="./index.html" class="d-inline-block">
+                            <img src="./assets/images/footerLogo.png" class="img-fluid" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 mb-3">
+                    <div class="footerContent">
+                        <ul class="listStyleNone">
+                            <li class="mb-3"><i class="fa-solid fa-location-dot me-2 textPrimary fs-20"></i> 88
+                                MACDONALD
+                                STREET, B5 6TN,
+                                UK</li>
+                            <li><i class="fa-solid fa-phone me-2 textPrimary fs-20"></i> +44 7375 370010</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 mb-3">
+                    <div class="footerContent text-center">
+                        <h3 class="mb-3 fs-18">Whisper to us about your feelings, and we will prepare what you need now.
+                        </h3>
+                        <div class="d-flex justify-content-center gap-10">
+                            <a href="#" class="socialIcon flexCenter">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="socialIcon flexCenter">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#" class="socialIcon flexCenter">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 mb-3">
+                    <div class="footerContent">
+                        <ul class="listStyleNone quickLinks">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Refund policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Contact us </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottomFooter border-top py-3">
+            <p class="text-center textLight mb-0">Copyright © 2023 cupbeans. All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- jquery -->
+    <script src="./assets/vendor/jquery/jquery.js"></script>
+    <!-- select2 -->
+    <script src="./assets/vendor/select2/js/select2.min.js"></script>
+    <!-- aos animation -->
+    <script src="./assets/vendor/aos/js/aos.js"></script>
+    <!-- owl-carousel -->
+    <script src="./assets/vendor/owl-carousel/js/owl.carousel.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom Js -->
+    <script src="./assets/js/customCarousel.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

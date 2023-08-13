@@ -362,6 +362,7 @@ header .headerSearchField.show {
 .header .headerSearchField input:focus {
     box-shadow: none;
 }
+
 .header .drawer {
     position: fixed;
     top: 0;
@@ -377,10 +378,12 @@ header .headerSearchField.show {
     z-index: 9999;
     /* Make sure the drawer is above the backdrop */
 }
-.header .cartOpenBtn{
+
+.header .cartOpenBtn {
     position: relative;
 }
-.header .cartOpenBtn .countValue{
+
+.header .cartOpenBtn .countValue {
     position: absolute;
     display: inline-block;
     width: 20px;
@@ -391,19 +394,23 @@ header .headerSearchField.show {
     font-size: 14px;
     top: 0;
     right: 0;
+    text-align: center;
 }
-.header .drawer .cartCloseBtn{
+
+.header .drawer .cartCloseBtn {
     border: none;
     outline: none;
     background: none;
 }
-.header .drawer img{
+
+.header .drawer img {
     max-width: 60px;
     height: auto;
 }
+
 .header .cartBackdrop {
     position: fixed;
-   inset: 0;
+    inset: 0;
     background-color: rgba(0, 0, 0, 0.6);
     /* Semi-transparent black color */
     display: none;
@@ -418,6 +425,7 @@ header .headerSearchField.show {
 .drawer-open~.cartBackdrop {
     display: block;
 }
+
 .header .logoContainer {
     max-width: 350px;
     height: auto;
@@ -538,20 +546,26 @@ header .headerSearchField.show {
     right: 0;
     animation: shakeImage 2s linear infinite;
 }
+
 @keyframes shakeImage {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translate(0, 0);
-      }
-      25% {
+    }
+
+    25% {
         transform: translate(-3px, -3px);
-      }
-      50% {
+    }
+
+    50% {
         transform: translate(0, 0);
-      }
-      75% {
+    }
+
+    75% {
         transform: translate(3px, 3px);
-      }
-  }
+    }
+}
 
 .home .herosection .contentContainer {
     position: absolute;
@@ -717,29 +731,35 @@ header .headerSearchField.show {
 .home .section-6 .itemCard:hover .hoverImage {
     display: block;
 }
+
 .home .section-7 {
     background-image: url('../images/home/section-7.jpg');
     background-size: cover;
     min-height: 70vh;
     position: relative;
 }
-.home .section-7 .content{
+
+.home .section-7 .content {
     position: absolute;
     inset: 0;
 }
-.home .section-7 .videoBtn{
+
+.home .section-7 .videoBtn {
     width: 100px;
     height: 100px;
     border: 1px solid var(--colorLight);
     border-radius: 50%;
     transition: .3s all ease-in-out;
 }
-.fs-40{
+
+.fs-40 {
     font-size: 40px;
 }
-.home .section-7 .videoBtn:hover{
+
+.home .section-7 .videoBtn:hover {
     transform: scale(1.2);
 }
+
 /* home page */
 
 /* product detail */
@@ -847,6 +867,21 @@ header .headerSearchField.show {
 /* product detail */
 
 /* shop */
+.shop .sizesBtn {
+    color: var(--colorPrimary);
+    border: 1px solid var(--colorPrimary);
+    padding: 7px 24px;
+    cursor: pointer;
+}
+
+.btn-check:checked+.sizesBtn,
+.sizesBtn.active,
+.sizesBtn.show,
+.sizesBtn:first-child:active,
+:not(.sizesBtn-check)+.sizesBtn:active {
+    background-color: var(--colorPrimary);
+    color: var(--colorWhite);
+}
 
 .shop .searchProducts:focus {
     box-shadow: none;
@@ -1292,6 +1327,11 @@ td {
     margin-bottom: 20px;
 }
 
+.cartDecreament,
+.cartIncreament {
+    color: #000;
+}
+
 /* faqs  */
 
 /* media query */
@@ -1329,9 +1369,18 @@ td {
     }
 
     .header .iconContainer {
-        width: auto;
-        height: auto;
-        background: none;
+        width: 40px;
+        height: 40px;
+    }
+
+    .header .iconContainer .icon {
+        font-size: 16px;
+    }
+
+    .header .cartOpenBtn .countValue {
+        width: 16px;
+        height: 16px;
+        font-size: 12px;
     }
 
     .header .shopBtn {
@@ -1429,9 +1478,133 @@ td {
         max-width: 140px;
     }
 
+    .header .iconContainer {
+        width: 34px;
+        height: 34px;
+    }
+
     .header .iconContainer .icon {
-        font-size: 20px;
+        font-size: 14px;
+    }
+
+    #headerSearchButton {
+        display: none;
+    }
+
+    .cartOpenBtn {
+        margin-right: 0 !important;
     }
 }
 
 /* media query */
+
+/* login & register */
+.authentication .nav-link {
+    border-radius: 0;
+}
+
+.authentication .nav-link {
+    color: var(--colorPrimary);
+    font-size: 18px;
+}
+
+.authentication .nav-link.active {
+    background-color: var(--colorPrimary);
+    color: var(--colorWhite);
+}
+
+:is(.loginBox, .registerBox) input:focus {
+    border-color: var(--colorPrimary);
+    box-shadow: 0 0 0 0.25rem rgb(156 28 52 / 22%);
+}
+
+.password-box {
+    position: relative;
+}
+
+.password-box input {
+    padding-right: 40px;
+}
+
+.auth-logo {
+    max-width: 350px;
+}
+
+.password-eye {
+    position: absolute;
+    right: 10px;
+    bottom: 6px;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+/* login & register */
+
+/* purchaseHistory */
+.purchaseHistory .viewDetailsBtn {
+    font-size: 14px;
+    padding: 5px 14px;
+    border: 1px solid var(--colorPrimary);
+    color: var(--colorPrimary);
+    transition: .3s all ease-in-out;
+}
+
+.purchaseHistory .viewDetailsBtn:hover {
+    background-color: var(--colorPrimary);
+    color: var(--colorWhite);
+}
+
+/* purchaseHistory */
+
+/* personalInformation */
+.personalInformation input,
+.personalInformation select {
+    border-radius: 0;
+}
+
+.personalInformation input:focus,
+.personalInformation select:focus {
+    border-color: var(--colorPrimary);
+    box-shadow: none;
+}
+
+.personalInformation .genderoptions {
+    border: 1px solid var(--borderLightColor);
+    width: 50%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.btn-check:checked+.genderoptions,
+.genderoptions.active,
+.genderoptions.show,
+.genderoptions:first-child:active,
+:not(.genderoptions-check)+.genderoptions:active {
+    background-color: var(--colorPrimary);
+    color: var(--colorWhite);
+    border-color: var(--colorPrimary);
+}
+
+/* personalInformation */
+
+/* myAddress */
+.myAddress .addressBox .defaultBox {
+    background-color: #ededed;
+    display: inline-block;
+    font-size: 14px;
+}
+
+/* myAddress */
+
+/* guestpage */
+.guestpage input:focus{
+    border-color: var(--colorPrimary);
+    box-shadow: 0 0 0 0.25rem rgb(156 28 52 / 22%);
+}
+@media (min-width: 767px) {
+    .guestpage .loginBox{
+        border-right: 1px solid var(--borderLightColor);
+    }
+}
+/* guestpage */

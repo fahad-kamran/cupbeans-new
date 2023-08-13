@@ -89,4 +89,20 @@ $(document).ready(function () {
     iframe.src = iframe.src; // This will reload the iframe, pausing the video
   });
   // home video iframe
+
+  // login
+  $('#togglePassword').click(function () {
+    const passwordInput = $('#passwordInput');
+    const passwordType = passwordInput.attr('type');
+    const eyeIcon = $(this).find('.icon');
+
+    if (passwordType === 'password') {
+      passwordInput.attr('type', 'text');
+      eyeIcon.removeClass('fa-eye').addClass('fa-eye-slash');
+    } else {
+      passwordInput.attr('type', 'password');
+      eyeIcon.removeClass('fa-eye-slash').addClass('fa-eye');
+    }
+  });
+  // login
 });
